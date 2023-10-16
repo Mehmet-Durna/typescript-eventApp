@@ -27,6 +27,8 @@ const initApp = (): void => {
     const newItem = new ListItem(itemId.toString(), newEntryText)
     // Add new item to full list
     fullList.addItem(newItem)
+    // Clear input
+    input.value = ''
     // Re-render list with new item included
     template.render(fullList)
   })
